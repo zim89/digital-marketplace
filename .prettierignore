@@ -1,0 +1,14 @@
+node_modules/
+.next/
+dist/
+webDist/
+distWeb/
+distLambda/
+goldstackLocal/
+coverage/
+.terraform/
+.yarn/
+.pnp.js
+pnpm-lock.yaml
+*.tfstate
+*.tfstate.backup
