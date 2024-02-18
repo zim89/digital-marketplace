@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import './globals.css';
+import Navbar from '@/components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +17,6 @@ export default function RootLayout({
 }: Readonly<{
   children: ReactNode;
 }>) {
-  'scsc'.toLowerCase();
   return (
     <html lang='en' className='h-full'>
       <body
@@ -25,6 +25,7 @@ export default function RootLayout({
           inter.className
         )}>
         <main className='relative flex min-h-screen flex-col'>
+          <Navbar />
           <div className='flex-1 flex-grow'>{children}</div>
         </main>
       </body>
